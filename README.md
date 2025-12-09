@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+Elbette, projen için bir README.md dosyası oluşturabilirim.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Görselde gördüğüm kadarıyla bu bir Araç Kiralama (Car Rental) uygulaması gibi duruyor. Projenin ana hatlarını ve nasıl çalıştırılacağını içeren bir taslak hazırladım. İhtiyaçlarına göre özelleştirebilirsin.
 
-Currently, two official plugins are available:
+🚗 CarHub - Araç Kiralama Platformu
+CarHub, kullanıcıların kolayca araç arayıp kiralayabileceği modern bir araç kiralama platformudur.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Özellikler
+Kapsamlı Araç Arama: Marka, model, fiyat ve diğer kriterlere göre filtreleme.
 
-## React Compiler
+Detaylı Araç Bilgileri: Yüksek çözünürlüklü görseller ve tüm teknik detaylar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Kullanıcı Dostu Arayüz: Modern ve sezgisel tasarım ile rahat bir kullanıcı deneyimi.
 
-## Expanding the ESLint configuration
+🛠️ Teknolojiler
+Bu proje aşağıdaki temel teknolojiler kullanılarak geliştirilmiştir:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React / Next.js: Hızlı ve ölçeklenebilir kullanıcı arayüzü oluşturmak için. (Klasör yapısından tahmin edilmiştir)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+TypeScript: Daha güvenli ve bakımı kolay kod yazmak için.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Tailwind CSS / Veya Özel CSS: Modern ve duyarlı tasarım için.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Git / GitHub: Versiyon kontrolü ve işbirliği için.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🚀 Kurulum ve Çalıştırma
+Projenizi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Ön Koşullar
+Bilgisayarınızda kurulu olması gerekenler:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Node.js (Tavsiye edilen sürüm: 18+)
+
+npm veya yarn
+
+1. Projeyi Klonlayın
+   git clone [(https://github.com/ualperen41/carRental/tree/main)]
+   cd car-rental
+
+2. Bağımlılıkları Yükleyin
+   Proje klasörüne girdikten sonra tüm bağımlılıkları yükleyin:
+   npm install
+
+# Veya
+
+# yarn install
+
+3. Projeyi Başlatın
+   Geliştirme sunucusunu başlatın:
+
+Proje genellikle http://localhost:5173 adresinde çalışmaya başlayacaktır. Tarayıcınızdan bu adrese giderek uygulamayı görüntüleyebilirsiniz.
