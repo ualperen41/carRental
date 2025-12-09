@@ -1,7 +1,3 @@
-Elbette, projen için bir README.md dosyası oluşturabilirim.
-
-Görselde gördüğüm kadarıyla bu bir Araç Kiralama (Car Rental) uygulaması gibi duruyor. Projenin ana hatlarını ve nasıl çalıştırılacağını içeren bir taslak hazırladım. İhtiyaçlarına göre özelleştirebilirsin.
-
 🚗 CarHub - Araç Kiralama Platformu
 CarHub, kullanıcıların kolayca araç arayıp kiralayabileceği modern bir araç kiralama platformudur.
 
