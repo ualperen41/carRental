@@ -1,6 +1,10 @@
 🚗 CarHub - Araç Kiralama Platformu
 CarHub, kullanıcıların kolayca araç arayıp kiralayabileceği modern bir araç kiralama platformudur.
 
+## Ekran Görüntüsü
+
+![](./carRentals.gif)
+
 ✨ Özellikler
 Kapsamlı Araç Arama: Marka, model, fiyat ve diğer kriterlere göre filtreleme.
 
